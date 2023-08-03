@@ -1,0 +1,25 @@
+.bot-message {
+    background-color: white;
+    display: inline-block;
+    padding: 0px 27px 0px 26px;
+    border-radius: 20px 20px 20px 0px;
+    max-width: 1000px;
+    margin: 10px;
+}
+
+.bot-message-wrapper {
+}
+
+.bot-table {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 20px;
+}
+
+.bot-table table tbody tr > td {
+    padding: 5px;
+}
+
+.tbody > .trow {
+    border: 1px solid black;
+}
