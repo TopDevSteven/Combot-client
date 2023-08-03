@@ -17,8 +17,8 @@ const DrugTable = ({ jsonArray, keyArray }) => {
         <tbody>
           {jsonArray.map((item, index) => (
             <tr key={index}>
-              {keyArray.map((header, index) => (
-                <td key={index}>{item[header]}</td>
+              {item.map((header, index) => (
+                <td key={index}>{header}</td>
               ))}
             </tr>
           ))}

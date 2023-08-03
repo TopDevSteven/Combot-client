@@ -30,7 +30,8 @@ const SearchBox = () => {
                 if (res.ok) {
                     setQuery("")
                     const response = await res.json()
-
+                    console.log(response.row)
+                    console.log(response.column)
                     // setMessage(response.message)
                     setMessage(message => [
                         ...message.filter((item) => item.text !== "LOADING"),
@@ -40,12 +41,12 @@ const SearchBox = () => {
                     // setKeyArray(response.keyArray)
                     setJsonArray(jsonArray => [
                         ...jsonArray,
-                        response.jsonArray
+                        response.row
                     ])
 
                     setKeyArray(keyArray => [
                         ...keyArray,
-                        response.keyArray
+                        response.column
                     ])
                     console.log(response.message)
                 }
